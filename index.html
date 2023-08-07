@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management Website</title>
+  <!-- <meta http-equiv="refresh" content="3"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+<style>
+    .hover-effect:hover{
+        padding: 1%;
+        transition: 0.2s;
+    }
+    .nav-link:hover{
+        color: white;
+        transition: 0.3s;
+    }
+</style>
+<header class="bg-primary pt-2 text-white text-center">
+  <h1>Event Managers co.</h1>
+  <p>We Make Your Gatherings Remarkable.</p><br>
+  <nav class="navbar navbar-expand-lg navbar-light pt-3">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav fs-5">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- Sliding bar -->
+<section id="upcoming-events">
+  <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img.jpg" class="d-block w-100 h-20" alt="Event 1">
+        <div class="carousel-caption">
+          <h3>Dinner Party</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nemo delectus ipsum dolore voluptatibus accusantium sit officiis, laborum perspiciatis hic molestiae quasi. At vero consequuntur quidem culpa eligendi modi iusto.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img2.jpg" class="d-block w-100" alt="Event 2">
+        <div class="carousel-caption">
+          <h3>Family Gathering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consectetur illum excepturi, ipsum praesentium earum distinctio nam animi ratione ad cum repellat ea consequuntur eius tempora, vitae, perspiciatis possimus sit?</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img3.jpg" class="d-block w-100" alt="Event 3">
+        <div class="carousel-caption">
+            <h3>Birthday Party</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, sapiente nemo rem soluta libero illo magni consequatur quas facilis accusantium eaque cumque fuga expedita porro natus temporibus dolor nam? Molestias?</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+<!-- Services -->
+<section id="services" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card hover-effect">
+            <img src="img.jpg" class="card-img-top h-100" alt="Service 1">
+            <div class="card-body">
+              <h5 class="card-title">Dinner Party</h5>
+              <p class="card-text">Description of service</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card hover-effect">
+            <img src="img2.jpg" class="card-img-top h-100" alt="Service 2">
+            <div class="card-body">
+              <h5 class="card-title">Family Gathering</h5>
+              <p class="card-text">Description of service</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card hover-effect">
+            <img src="img3.jpg" class="card-img-top h-100" alt="Service 3">
+            <div class="card-body">
+              <h5 class="card-title">Birthday Party</h5>
+              <p class="card-text">Description of service</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add More services here -->
+      </div>
+    </div>
+  </section>
+  
+<!-- Form Field -->
+<section>
+    <form action="" class="form-group m-3" id="contact">
+        <div class="form-group">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="content" class="form-label">Message:</label>
+            <textarea id="content" class="form-control" rows="5" required></textarea>
+          </div>
+          <div class="d-flex justify-content-center my-2">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    
+    </form>
+</section>
+<section id="cta" class="py-5 bg-primary text-white text-center">
+  <h2>Book Your Event Now!</h2>
+  <p>Contact us to plan your next memorable event.</p>
+  <a href="#contact">
+    <button class="btn btn-light btn-lg">Get Started</button>
+</a>
+  
+</section>
+<!-- Footer -->
+<footer class="bg-dark text-white py-3 text-center">
+  <p>&copy; 2023 Event Managers Co. All rights reserved.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
